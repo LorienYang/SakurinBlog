@@ -13,10 +13,12 @@
     "new-post": "node scripts/new-post.js",
     "format": "biome format --write ./src",
     "lint": "biome check --write ./src",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "ssr": "node ssr.js"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
+    "@astrojs/node": "^9.3.0",
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.4.1",
     "@astrojs/svelte": "7.1.0",
@@ -36,6 +38,7 @@
     "astro": "5.12.3",
     "astro-expressive-code": "^0.41.3",
     "astro-icon": "^1.1.5",
+    "express": "^5.1.0",
     "hastscript": "^9.0.1",
     "katex": "^0.16.22",
     "markdown-it": "^14.1.0",
